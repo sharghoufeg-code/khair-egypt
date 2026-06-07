@@ -103,9 +103,9 @@ const content = {
     ],
     hero: {
       badge: "تصدير زراعي عالمي",
-      title1: "من أجود مزارع مصر..",
-      title2: "إلى الأسواق العالمية.",
-      desc: "نربط المشترين الدوليين بأجود الفواكه والخضروات المصرية. منصتك الأولى لضمان الجودة والأسعار التنافسية.",
+      title1: "أرضنا الخضراء..",
+      title2: "لسفرة العالم.",
+      desc: "اكتشف واستورد أجود الفواكه والخضروات من قلب الأراضي المصرية. منصتك الأولى لضمان الجودة والأسعار التنافسية.",
       btn1: "تصفح المنتجات",
     },
     about: {
@@ -224,7 +224,7 @@ export default function KhairEgyptHome() {
         </button>
       </motion.nav>
 
-      {/* 1. Hero Section */}
+      {/* 1. Hero Section - Globe is a perfect circle (rounded-full) */}
       <section id="home" className="relative pt-28 pb-10 md:pt-36 md:pb-12 px-6 bg-gradient-to-b from-[#eef9f2] via-[#f4fcf6] to-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="text-center lg:text-start">
@@ -258,42 +258,24 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 2. About Us Section - Stronger gradient to create a break, Dark Premium Graphic */}
-      <section id="about" className="relative py-10 md:py-16 px-6 bg-gradient-to-br from-[#eaf6ee] via-[#f1fdf5] to-[#e4f5ea] border-y border-green-50/50">
+      {/* 2. About Us Section - Smooth gradient starting from white down to soft mint */}
+      <section id="about" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-white via-[#f6fcf8] to-[#eef7f1]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-14 items-center">
           
-          {/* New Premium B2B Graphic */}
-          <motion.div initial="hidden" whileInView="whileInView" variants={smoothFade} className="relative w-full h-[260px] md:h-[340px] rounded-[2rem] overflow-hidden flex flex-col items-center justify-center border border-green-900/10 shadow-2xl group">
-            {/* Dark Tech Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#0A1A11] via-[#153a25] to-[#0A1A11] z-0"></div>
-            
-            {/* Subtle Grid Pattern */}
-            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:24px_24px] z-0"></div>
-
-            {/* Glowing Accents */}
-            <div className="absolute top-[-20%] right-[-10%] w-64 h-64 bg-[#43ac35] rounded-full blur-[90px] opacity-20"></div>
-            <div className="absolute bottom-[-10%] left-[-10%] w-48 h-48 bg-[#22c55e] rounded-full blur-[80px] opacity-20"></div>
-
-            {/* Floating Top Badge */}
-            <div className={`absolute top-5 md:top-6 ${isAr ? 'left-5 md:left-6' : 'right-5 md:right-6'} bg-white/10 backdrop-blur-md px-3 py-2 md:px-4 md:py-2.5 rounded-2xl border border-white/20 shadow-sm flex items-center gap-2 z-30 transition-transform group-hover:-translate-y-1`}>
-              <div className="p-1 md:p-1.5 bg-[#43ac35] rounded-full"><Globe2 className="w-3 h-3 md:w-4 md:h-4 text-white" /></div>
+          <motion.div initial="hidden" whileInView="whileInView" variants={smoothFade} className="relative w-full h-[260px] md:h-[340px] bg-gradient-to-b from-[#e5fbf0] to-white rounded-[2rem] overflow-hidden flex flex-col items-center justify-end pb-6 border border-green-50 shadow-sm">
+            <div className={`absolute top-4 md:top-6 ${isAr ? 'left-4 md:left-6' : 'right-4 md:right-6'} bg-white px-3 md:px-4 py-2 rounded-2xl shadow-sm flex items-center gap-2 z-30`}>
+              <div className="p-1 rounded-full border border-green-100"><Leaf className="w-3 h-3 text-[#43ac35]" /></div>
               <div className="flex flex-col">
-                <span className="text-[7px] md:text-[8px] font-bold text-gray-300 uppercase tracking-widest">{t.about.badgeTop}</span>
-                <span className="text-xs md:text-sm font-black text-white leading-none">{t.about.badgeBottom}</span>
+                <span className="text-[8px] md:text-[9px] font-bold text-gray-500 uppercase tracking-widest">{t.about.badgeTop}</span>
+                <span className="text-xs md:text-sm font-black text-[#0A1A11] leading-none">{t.about.badgeBottom}</span>
               </div>
             </div>
-
-            {/* Center Sprout/Growth Element */}
-            <div className="relative z-20 flex items-center justify-center mb-6">
-              <div className="absolute inset-0 bg-[#43ac35] blur-2xl opacity-40 rounded-full animate-pulse"></div>
-              <div className="bg-white/5 border border-white/10 p-5 md:p-6 rounded-3xl backdrop-blur-sm group-hover:scale-110 transition-transform duration-500 shadow-inner">
-                 <Sprout className="w-12 h-12 md:w-16 md:h-16 text-[#43ac35]" />
-              </div>
-            </div>
-
-            {/* Floating Bottom Card */}
-            <div className="absolute bottom-5 md:bottom-6 z-30 bg-white/95 backdrop-blur-md px-5 py-2.5 md:px-6 md:py-3.5 rounded-full shadow-2xl border border-white/50 group-hover:translate-y-[-5px] transition-transform duration-500">
-              <p className="text-sm md:text-base font-black text-transparent bg-clip-text bg-gradient-to-r from-[#0A1A11] to-[#43ac35]">{t.about.subtitle}</p>
+            <div className="absolute top-[10%] md:top-[15%] w-32 h-32 md:w-40 md:h-40 bg-[#fbbf24] rounded-full z-0"></div>
+            <div className="absolute bottom-0 w-[140%] h-[40%] bg-gradient-to-t from-[#86efac] to-[#dcfce3] rounded-t-[100%] z-10 opacity-90"></div>
+            <div className="absolute bottom-0 w-[120%] h-[25%] bg-gradient-to-t from-[#4ade80] to-[#bbf7d0] rounded-t-[100%] right-[-10%] z-10 opacity-95"></div>
+            <div className="absolute bottom-0 w-12 h-[30%] bg-[#93c5fd] skew-x-12 z-20 opacity-80"></div>
+            <div className="relative z-30 bg-white/95 backdrop-blur-md px-6 py-3 rounded-full shadow-lg border border-white/50 mb-2">
+              <p className="text-base md:text-lg font-black text-[#0A1A11]">{t.about.subtitle}</p>
             </div>
           </motion.div>
 
@@ -304,7 +286,7 @@ export default function KhairEgyptHome() {
             
             <div className="space-y-3">
               {t.about.points.map((point: any, idx: number) => (
-                <div key={idx} className="bg-white px-5 py-4 rounded-[1rem] shadow-md border border-white flex items-center gap-3 hover:border-green-200 transition-colors">
+                <div key={idx} className="bg-white px-5 py-4 rounded-[1rem] shadow-sm border border-gray-100 flex items-center gap-3 hover:border-green-200 transition-colors">
                   <div className="rounded-full border border-green-100 p-0.5 shrink-0">
                     <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-[#43ac35]" />
                   </div>
@@ -316,8 +298,8 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 3. Products Section - Takes the strong gradient and fades it back to white */}
-      <section id="products" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-[#e4f5ea] via-[#f2fbf6] to-white">
+      {/* 3. Products Section - Gradient continues, making white cards pop beautifully */}
+      <section id="products" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-[#eef7f1] via-[#e5f4eb] to-[#f9fdfa]">
         <div className="max-w-6xl mx-auto">
           <motion.div initial="hidden" whileInView="whileInView" variants={smoothFade} className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-black text-[#0A1A11] mb-3">{t.products.title}</h2>
@@ -340,7 +322,7 @@ export default function KhairEgyptHome() {
       </section>
 
       {/* 4. Quality Section */}
-      <section id="quality" className="relative py-12 md:py-20 bg-gradient-to-b from-white to-[#f0f7f3]">
+      <section id="quality" className="relative py-12 md:py-20 bg-gradient-to-b from-[#f9fdfa] to-[#f0f7f3]">
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 items-center">
             <motion.div initial="hidden" whileInView="whileInView" variants={smoothFade} className="lg:col-span-1 text-center lg:text-start">
