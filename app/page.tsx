@@ -224,7 +224,7 @@ export default function KhairEgyptHome() {
         </button>
       </motion.nav>
 
-      {/* 1. Hero Section - Smaller padding and fonts, perfect circle map */}
+      {/* 1. Hero Section - Globe is a perfect circle (rounded-full) */}
       <section id="home" className="relative pt-28 pb-10 md:pt-36 md:pb-12 px-6 bg-gradient-to-b from-[#eef9f2] via-[#f4fcf6] to-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="text-center lg:text-start">
@@ -245,7 +245,6 @@ export default function KhairEgyptHome() {
             </motion.div>
           </div>
 
-          {/* Restored Perfect Circle */}
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className="relative w-full aspect-square max-w-[280px] md:max-w-[360px] mx-auto lg:block">
             <div className="relative w-full h-full rounded-full overflow-hidden border-[6px] md:border-[8px] border-white shadow-xl bg-gradient-to-br from-[#eafaf0] to-[#dcfce3]">
               <motion.div animate={{ backgroundPosition: ["0% 50%", "100% 50%"] }} transition={{ duration: 50, repeat: Infinity, ease: "linear" }} className="absolute inset-0 w-full h-full opacity-40 bg-[url('https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg')] bg-[length:200%_auto] bg-repeat-x" style={{ filter: "brightness(0) invert(40%) sepia(80%) saturate(300%) hue-rotate(70deg)" }} />
@@ -259,11 +258,10 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 2. About Us Section - Restored the original cool graphic style */}
+      {/* 2. About Us Section */}
       <section id="about" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-white to-[#f9fdfa]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-14 items-center">
           
-          {/* Old Cool Graphic */}
           <motion.div initial="hidden" whileInView="whileInView" variants={smoothFade} className="relative w-full h-[260px] md:h-[340px] bg-gradient-to-b from-[#e5fbf0] to-white rounded-[2rem] overflow-hidden flex flex-col items-center justify-end pb-6 border border-green-50 shadow-sm">
             <div className={`absolute top-4 md:top-6 ${isAr ? 'left-4 md:left-6' : 'right-4 md:right-6'} bg-white px-3 md:px-4 py-2 rounded-2xl shadow-sm flex items-center gap-2 z-30`}>
               <div className="p-1 rounded-full border border-green-100"><Leaf className="w-3 h-3 text-[#43ac35]" /></div>
@@ -281,7 +279,6 @@ export default function KhairEgyptHome() {
             </div>
           </motion.div>
 
-          {/* Simple bullet points restored */}
           <motion.div initial="hidden" whileInView="whileInView" variants={smoothFade} className="lg:pl-6">
             <h2 className="text-3xl md:text-4xl font-black text-[#0A1A11] mb-3">{t.about.title}</h2>
             <div className="w-10 h-1.5 bg-[#43ac35] mb-5 rounded-full"></div>
