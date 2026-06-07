@@ -20,9 +20,9 @@ const content = {
     ],
     hero: {
       badge: "Global Produce Export",
-      title1: "Egypt's Green Soil..",
-      title2: "To The World.",
-      desc: "Discover and import the finest fruits and vegetables from the heart of Egyptian lands. Your premium B2B platform for guaranteed quality.",
+      title1: "From Egypt's Finest Farms.",
+      title2: "To Global Markets.",
+      desc: "Connecting international buyers with premium Egyptian fruits and vegetables.",
       btn1: "Explore Products",
     },
     about: {
@@ -258,8 +258,8 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 2. About Us Section */}
-      <section id="about" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-white to-[#f9fdfa]">
+      {/* 2. About Us Section - Smooth gradient starting from white down to soft mint */}
+      <section id="about" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-white via-[#f6fcf8] to-[#eef7f1]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-14 items-center">
           
           <motion.div initial="hidden" whileInView="whileInView" variants={smoothFade} className="relative w-full h-[260px] md:h-[340px] bg-gradient-to-b from-[#e5fbf0] to-white rounded-[2rem] overflow-hidden flex flex-col items-center justify-end pb-6 border border-green-50 shadow-sm">
@@ -298,8 +298,8 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 3. Products Section */}
-      <section id="products" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-[#f9fdfa] to-[#f4fcf6]">
+      {/* 3. Products Section - Gradient continues, making white cards pop beautifully */}
+      <section id="products" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-[#eef7f1] via-[#e5f4eb] to-[#f9fdfa]">
         <div className="max-w-6xl mx-auto">
           <motion.div initial="hidden" whileInView="whileInView" variants={smoothFade} className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-black text-[#0A1A11] mb-3">{t.products.title}</h2>
@@ -308,7 +308,7 @@ export default function KhairEgyptHome() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {t.products.items.map((item, idx) => (
-              <motion.div key={idx} initial="hidden" whileInView="whileInView" variants={smoothFade} className={`bg-white rounded-[1.5rem] p-6 border border-gray-100 ${item.hoverBorder} hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group shadow-sm`}>
+              <motion.div key={idx} initial="hidden" whileInView="whileInView" variants={smoothFade} className={`bg-white rounded-[1.5rem] p-6 border border-gray-100 ${item.hoverBorder} hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group shadow-md`}>
                 <div className={`w-12 h-12 ${item.iconBg} rounded-[1rem] flex items-center justify-center mb-5 shadow-sm group-hover:scale-110 transition-transform duration-300`}>
                   {item.icon}
                 </div>
@@ -321,8 +321,8 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 4. Quality Section - Soft light gradient, NO MORE DARK MODE */}
-      <section id="quality" className="relative py-12 md:py-20 bg-gradient-to-b from-[#f4fcf6] to-[#eef9f2]">
+      {/* 4. Quality Section */}
+      <section id="quality" className="relative py-12 md:py-20 bg-gradient-to-b from-[#f9fdfa] to-[#f0f7f3]">
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 items-center">
             <motion.div initial="hidden" whileInView="whileInView" variants={smoothFade} className="lg:col-span-1 text-center lg:text-start">
@@ -349,7 +349,7 @@ export default function KhairEgyptHome() {
       </section>
 
       {/* 5. Calendar Section */}
-      <section id="calendar" className="relative py-10 md:py-16 px-4 md:px-6 bg-gradient-to-b from-[#eef9f2] to-white">
+      <section id="calendar" className="relative py-10 md:py-16 px-4 md:px-6 bg-gradient-to-b from-[#f0f7f3] to-white">
         <div className="max-w-5xl mx-auto">
           <motion.div initial="hidden" whileInView="whileInView" variants={smoothFade} className="flex flex-col items-center justify-center text-center mb-8">
             <div className="flex items-center gap-2 mb-3">
@@ -402,7 +402,7 @@ export default function KhairEgyptHome() {
       </section>
 
       {/* 6. Shipping & Contact */}
-      <section id="shipping" className="relative pt-10 md:pt-14 pb-12 md:pb-20 bg-gradient-to-b from-white to-[#f9fdfa]">
+      <section id="shipping" className="relative pt-10 md:pt-14 pb-12 md:pb-20 bg-gradient-to-b from-white to-[#edf5f0]">
         <div className="max-w-6xl mx-auto px-4 md:px-6 mb-14">
           <motion.div initial="hidden" whileInView="whileInView" variants={smoothFade} className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-black text-[#0A1A11] mb-3">{t.shipping.title}</h2>
