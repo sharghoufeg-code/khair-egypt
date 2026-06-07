@@ -36,10 +36,10 @@ const content = {
     products: {
       title: "Premium Export Categories",
       items: [
-        { name: "Premium Citrus", desc: "Oranges, Lemons & Mandarins", icon: <Sun className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f59e0b] to-[#d97706]", hoverBorder: "hover:border-[#f59e0b]", shadow: "hover:shadow-[#f59e0b]/30" },
-        { name: "Fresh Fruits", desc: "Mangoes, Strawberries & Grapes", icon: <Cherry className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f43f5e] to-[#e11d48]", hoverBorder: "hover:border-[#f43f5e]", shadow: "hover:shadow-[#f43f5e]/30" },
-        { name: "Root Vegetables", desc: "Premium Potatoes & Onions", icon: <Carrot className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f97316] to-[#ea580c]", hoverBorder: "hover:border-[#f97316]", shadow: "hover:shadow-[#f97316]/30" },
-        { name: "Green Produce", desc: "Cucumbers, Peppers & Beans", icon: <Sprout className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#22c55e] to-[#16a34a]", hoverBorder: "hover:border-[#22c55e]", shadow: "hover:shadow-[#22c55e]/30" }
+        { name: "Premium Citrus", desc: "Oranges, Lemons & Mandarins", icon: <Sun className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f59e0b] to-[#ea580c]", hoverBorder: "hover:border-[#ea580c]", shadow: "hover:shadow-[#ea580c]/30" },
+        { name: "Fresh Fruits", desc: "Mangoes, Strawberries & Grapes", icon: <Cherry className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f43f5e] to-[#be123c]", hoverBorder: "hover:border-[#be123c]", shadow: "hover:shadow-[#be123c]/30" },
+        { name: "Root Vegetables", desc: "Premium Potatoes & Onions", icon: <Carrot className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f97316] to-[#c2410c]", hoverBorder: "hover:border-[#c2410c]", shadow: "hover:shadow-[#c2410c]/30" },
+        { name: "Green Produce", desc: "Cucumbers, Peppers & Beans", icon: <Sprout className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#22c55e] to-[#15803d]", hoverBorder: "hover:border-[#15803d]", shadow: "hover:shadow-[#15803d]/30" }
       ]
     },
     quality: {
@@ -119,10 +119,10 @@ const content = {
     products: {
       title: "فئات التصدير الرئيسية",
       items: [
-        { name: "الموالح الفاخرة", desc: "برتقال، ليمون، ويوسفي", icon: <Sun className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f59e0b] to-[#d97706]", hoverBorder: "hover:border-[#f59e0b]", shadow: "hover:shadow-[#f59e0b]/30" },
-        { name: "الفواكه الطازجة", desc: "مانجو، فراولة، وعنب", icon: <Cherry className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f43f5e] to-[#e11d48]", hoverBorder: "hover:border-[#f43f5e]", shadow: "hover:shadow-[#f43f5e]/30" },
-        { name: "الخضروات الجذرية", desc: "بطاطس وبصل للتصدير", icon: <Carrot className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f97316] to-[#ea580c]", hoverBorder: "hover:border-[#f97316]", shadow: "hover:shadow-[#f97316]/30" },
-        { name: "الخضروات الطازجة", desc: "خيار، فلفل، وفاصوليا", icon: <Sprout className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#22c55e] to-[#16a34a]", hoverBorder: "hover:border-[#22c55e]", shadow: "hover:shadow-[#22c55e]/30" }
+        { name: "الموالح الفاخرة", desc: "برتقال، ليمون، ويوسفي", icon: <Sun className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f59e0b] to-[#ea580c]", hoverBorder: "hover:border-[#ea580c]", shadow: "hover:shadow-[#ea580c]/30" },
+        { name: "الفواكه الطازجة", desc: "مانجو، فراولة، وعنب", icon: <Cherry className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f43f5e] to-[#be123c]", hoverBorder: "hover:border-[#be123c]", shadow: "hover:shadow-[#be123c]/30" },
+        { name: "الخضروات الجذرية", desc: "بطاطس وبصل للتصدير", icon: <Carrot className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f97316] to-[#c2410c]", hoverBorder: "hover:border-[#c2410c]", shadow: "hover:shadow-[#c2410c]/30" },
+        { name: "الخضروات الطازجة", desc: "خيار، فلفل، وفاصوليا", icon: <Sprout className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#22c55e] to-[#15803d]", hoverBorder: "hover:border-[#15803d]", shadow: "hover:shadow-[#15803d]/30" }
       ]
     },
     quality: {
@@ -194,17 +194,17 @@ export default function KhairEgyptHome() {
   };
 
   return (
-    <div className={`relative min-h-screen text-[#0A1A11] selection:bg-[#43ac35] selection:text-white overflow-x-hidden ${isAr ? cairo.className : inter.className}`} dir={t.dir}>
+    <div className={`relative min-h-screen text-[#0A1A11] selection:bg-[#399e2c] selection:text-white overflow-x-hidden ${isAr ? cairo.className : inter.className}`} dir={t.dir}>
       
       {/* Navbar - Stronger vibrant glow on hover for the button */}
       <motion.nav 
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
-        className="fixed top-4 md:top-6 left-4 right-4 lg:left-1/2 lg:-translate-x-1/2 lg:w-full lg:max-w-6xl z-50 bg-white/95 backdrop-blur-md transform-gpu border border-[#43ac35]/20 shadow-[0_4px_20px_rgba(67,172,53,0.08)] rounded-full px-5 py-3 flex items-center justify-between"
+        className="fixed top-4 md:top-6 left-4 right-4 lg:left-1/2 lg:-translate-x-1/2 lg:w-full lg:max-w-6xl z-50 bg-white/95 backdrop-blur-md transform-gpu border border-[#399e2c]/20 shadow-[0_4px_20px_rgba(57,158,44,0.12)] rounded-full px-5 py-3 flex items-center justify-between"
       >
         <div className="flex items-center gap-3">
-          <div className="bg-gradient-to-r from-[#43ac35] to-[#2ecc71] p-2 rounded-full shadow-md shadow-[#43ac35]/30">
+          <div className="bg-gradient-to-r from-[#399e2c] to-[#268a1a] p-2 rounded-full shadow-md shadow-[#399e2c]/40">
             <Leaf className="w-4 h-4 md:w-5 md:h-5 text-white" />
           </div>
           <span className="text-lg md:text-xl font-black uppercase tracking-tight">{t.brand}</span>
@@ -212,13 +212,13 @@ export default function KhairEgyptHome() {
         
         <div className="hidden lg:flex gap-8 text-sm font-bold text-gray-700">
           {t.nav.map((item, idx) => (
-            <a key={idx} href={item.href} className="hover:text-[#43ac35] transition-colors">{item.name}</a>
+            <a key={idx} href={item.href} className="hover:text-[#399e2c] transition-colors">{item.name}</a>
           ))}
         </div>
 
         <button 
           onClick={() => setLang(isAr ? 'en' : 'ar')}
-          className="flex items-center gap-2 text-xs md:text-sm font-bold bg-gradient-to-r from-[#43ac35] to-[#2ecc71] text-white px-4 py-2 md:px-5 rounded-full hover:shadow-[0_0_15px_rgba(67,172,53,0.4)] transition-all"
+          className="flex items-center gap-2 text-xs md:text-sm font-bold bg-gradient-to-r from-[#399e2c] to-[#268a1a] text-white px-4 py-2 md:px-5 rounded-full hover:shadow-[0_0_15px_rgba(57,158,44,0.5)] transition-all"
         >
           <Globe2 className="w-4 h-4" />
           {t.langToggle}
@@ -229,18 +229,18 @@ export default function KhairEgyptHome() {
       <section id="home" className="relative pt-28 pb-10 md:pt-36 md:pb-12 px-6 bg-gradient-to-b from-[#dcfce3] via-[#f0fdf4] to-[#f4fcf6]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="text-center lg:text-start">
-            <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mb-5 inline-flex items-center gap-2 px-4 py-1.5 bg-white text-[#43ac35] text-xs font-bold tracking-widest uppercase rounded-full border border-[#43ac35]/30 shadow-md">
+            <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mb-5 inline-flex items-center gap-2 px-4 py-1.5 bg-white text-[#399e2c] text-xs font-bold tracking-widest uppercase rounded-full border border-[#399e2c]/30 shadow-md">
               <Globe2 className="w-4 h-4" /> {t.hero.badge}
             </motion.div>
             <motion.h1 variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-4xl md:text-5xl lg:text-6xl font-black mb-5 leading-[1.1] tracking-tight">
               {t.hero.title1} <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#43ac35] to-[#2ecc71]">{t.hero.title2}</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#399e2c] to-[#268a1a]">{t.hero.title2}</span>
             </motion.h1>
             <motion.p variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-gray-700 text-sm md:text-base max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed font-bold">
               {t.hero.desc}
             </motion.p>
             <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-              <a href="#products" className="inline-flex bg-[#0A1A11] text-white px-6 py-3 md:px-8 md:py-3.5 rounded-full font-bold text-sm md:text-base text-center hover:bg-[#43ac35] hover:shadow-[0_8px_25px_rgba(67,172,53,0.4)] transition-all shadow-lg items-center justify-center gap-2">
+              <a href="#products" className="inline-flex bg-[#0A1A11] text-white px-6 py-3 md:px-8 md:py-3.5 rounded-full font-bold text-sm md:text-base text-center hover:bg-[#399e2c] hover:shadow-[0_8px_25px_rgba(57,158,44,0.4)] transition-all shadow-lg items-center justify-center gap-2">
                 {t.hero.btn1} {isAr ? <ArrowLeft className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
               </a>
             </motion.div>
@@ -250,8 +250,8 @@ export default function KhairEgyptHome() {
             <div className="relative w-full h-full rounded-full overflow-hidden border-[6px] md:border-[8px] border-white shadow-2xl bg-gradient-to-br from-[#bbf7d0] to-[#86efac]">
               <motion.div animate={{ backgroundPosition: ["0% 50%", "100% 50%"] }} transition={{ duration: 60, repeat: Infinity, ease: "linear" }} className="absolute inset-0 w-full h-full opacity-50 bg-[url('https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg')] bg-[length:200%_auto] bg-repeat-x transform-gpu will-change-[background-position]" style={{ filter: "brightness(0) invert(30%) sepia(80%) saturate(400%) hue-rotate(80deg)" }} />
               <div className="absolute inset-0 flex items-center justify-center z-30">
-                <div className="bg-white/95 backdrop-blur-sm transform-gpu p-3 md:p-4 rounded-full shadow-[0_0_30px_rgba(67,172,53,0.5)]">
-                  <MapPin className="w-8 h-8 md:w-10 md:h-10 text-[#43ac35] animate-bounce" />
+                <div className="bg-white/95 backdrop-blur-sm transform-gpu p-3 md:p-4 rounded-full shadow-[0_0_30px_rgba(57,158,44,0.5)]">
+                  <MapPin className="w-8 h-8 md:w-10 md:h-10 text-[#399e2c] animate-bounce" />
                 </div>
               </div>
             </div>
@@ -263,9 +263,9 @@ export default function KhairEgyptHome() {
       <section id="about" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-[#f4fcf6] via-white to-[#e8f8ee]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-14 items-center">
           
-          <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="relative w-full h-[260px] md:h-[340px] bg-gradient-to-b from-[#bbf7d0] to-white rounded-[2rem] overflow-hidden flex flex-col items-center justify-end pb-6 border border-[#43ac35]/20 shadow-xl">
+          <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="relative w-full h-[260px] md:h-[340px] bg-gradient-to-b from-[#bbf7d0] to-white rounded-[2rem] overflow-hidden flex flex-col items-center justify-end pb-6 border border-[#399e2c]/20 shadow-xl">
             <div className={`absolute top-4 md:top-6 ${isAr ? 'left-4 md:left-6' : 'right-4 md:right-6'} bg-white px-3 md:px-4 py-2 rounded-2xl shadow-md flex items-center gap-2 z-30`}>
-              <div className="p-1 rounded-full border border-green-200 bg-green-50"><Leaf className="w-3 h-3 text-[#43ac35]" /></div>
+              <div className="p-1 rounded-full border border-green-200 bg-green-50"><Leaf className="w-3 h-3 text-[#399e2c]" /></div>
               <div className="flex flex-col">
                 <span className="text-[8px] md:text-[9px] font-bold text-gray-500 uppercase tracking-widest">{t.about.badgeTop}</span>
                 <span className="text-xs md:text-sm font-black text-[#0A1A11] leading-none">{t.about.badgeBottom}</span>
@@ -273,7 +273,7 @@ export default function KhairEgyptHome() {
             </div>
             <div className="absolute top-[10%] md:top-[15%] w-32 h-32 md:w-40 md:h-40 bg-gradient-to-tr from-[#fbbf24] to-[#fde047] rounded-full shadow-[0_0_40px_rgba(251,191,36,0.6)] z-0"></div>
             <div className="absolute bottom-0 w-[140%] h-[40%] bg-gradient-to-t from-[#4ade80] to-[#bbf7d0] rounded-t-[100%] z-10 opacity-95"></div>
-            <div className="absolute bottom-0 w-[120%] h-[25%] bg-gradient-to-t from-[#22c55e] to-[#86efac] rounded-t-[100%] right-[-10%] z-10 opacity-100"></div>
+            <div className="absolute bottom-0 w-[120%] h-[25%] bg-gradient-to-t from-[#399e2c] to-[#86efac] rounded-t-[100%] right-[-10%] z-10 opacity-100"></div>
             <div className="absolute bottom-0 w-12 h-[30%] bg-[#60a5fa] skew-x-12 z-20 opacity-90"></div>
             <div className="relative z-30 bg-white/95 backdrop-blur-sm transform-gpu px-6 py-3 rounded-full shadow-lg border border-white/50 mb-2">
               <p className="text-base md:text-lg font-black text-[#0A1A11]">{t.about.subtitle}</p>
@@ -282,14 +282,14 @@ export default function KhairEgyptHome() {
 
           <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="lg:pl-6">
             <h2 className="text-3xl md:text-4xl font-black text-[#0A1A11] mb-3">{t.about.title}</h2>
-            <div className="w-10 h-1.5 bg-gradient-to-r from-[#43ac35] to-[#2ecc71] mb-5 rounded-full shadow-[0_0_10px_rgba(67,172,53,0.5)]"></div>
+            <div className="w-10 h-1.5 bg-gradient-to-r from-[#399e2c] to-[#268a1a] mb-5 rounded-full shadow-[0_0_10px_rgba(57,158,44,0.5)]"></div>
             <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-8 font-bold">{t.about.desc}</p>
             
             <div className="space-y-3">
               {t.about.points.map((point: any, idx: number) => (
-                <div key={idx} className="bg-white px-5 py-4 rounded-[1rem] shadow-md border border-gray-100 flex items-center gap-3 hover:border-[#43ac35]/50 transition-colors">
-                  <div className="rounded-full bg-[#e8f8ee] border border-[#43ac35]/20 p-1 shrink-0">
-                    <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-[#43ac35]" />
+                <div key={idx} className="bg-white px-5 py-4 rounded-[1rem] shadow-md border border-gray-100 flex items-center gap-3 hover:border-[#399e2c]/50 transition-colors">
+                  <div className="rounded-full bg-[#e8f8ee] border border-[#399e2c]/20 p-1 shrink-0">
+                    <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-[#399e2c]" />
                   </div>
                   <span className="text-sm md:text-base font-bold text-[#0A1A11]">{point}</span>
                 </div>
@@ -304,7 +304,7 @@ export default function KhairEgyptHome() {
         <div className="max-w-6xl mx-auto">
           <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-black text-[#0A1A11] mb-3">{t.products.title}</h2>
-            <div className="w-12 h-1.5 bg-gradient-to-r from-[#43ac35] to-[#2ecc71] mx-auto rounded-full shadow-[0_0_10px_rgba(67,172,53,0.5)]"></div>
+            <div className="w-12 h-1.5 bg-gradient-to-r from-[#399e2c] to-[#268a1a] mx-auto rounded-full shadow-[0_0_10px_rgba(57,158,44,0.5)]"></div>
           </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -328,16 +328,16 @@ export default function KhairEgyptHome() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 items-center">
             <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="lg:col-span-1 text-center lg:text-start">
               <h2 className="text-3xl md:text-4xl font-black text-[#0A1A11] mb-4 leading-tight">{t.quality.title}</h2>
-              <div className="w-12 h-1.5 bg-gradient-to-r from-[#43ac35] to-[#2ecc71] mb-6 mx-auto lg:mx-0 rounded-full shadow-[0_0_10px_rgba(67,172,53,0.5)]"></div>
+              <div className="w-12 h-1.5 bg-gradient-to-r from-[#399e2c] to-[#268a1a] mb-6 mx-auto lg:mx-0 rounded-full shadow-[0_0_10px_rgba(57,158,44,0.5)]"></div>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed font-bold">{t.quality.desc}</p>
             </motion.div>
             
             <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-4">
               {t.quality.items.map((item, idx) => (
                 <motion.div key={idx} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: idx * 0.1 }}
-                  className={`${item.colSpan} bg-white border border-gray-100 rounded-[1.5rem] p-6 shadow-md hover:border-[#43ac35] hover:shadow-xl hover:shadow-[#43ac35]/10 transition-all duration-300 group`}
+                  className={`${item.colSpan} bg-white border border-gray-100 rounded-[1.5rem] p-6 shadow-md hover:border-[#399e2c] hover:shadow-xl hover:shadow-[#399e2c]/10 transition-all duration-300 group`}
                 >
-                  <div className="text-[#43ac35] mb-4 bg-[#dcfce3] w-12 h-12 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:bg-[#43ac35] group-hover:text-white group-hover:shadow-[0_0_15px_rgba(67,172,53,0.4)] transition-all">
+                  <div className="text-[#399e2c] mb-4 bg-[#dcfce3] w-12 h-12 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:bg-[#399e2c] group-hover:text-white group-hover:shadow-[0_0_15px_rgba(57,158,44,0.4)] transition-all">
                     {item.icon}
                   </div>
                   <h3 className="text-lg font-bold text-[#0A1A11] mb-2">{item.title}</h3>
@@ -354,16 +354,16 @@ export default function KhairEgyptHome() {
         <div className="max-w-5xl mx-auto">
           <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="flex flex-col items-center justify-center text-center mb-8">
             <div className="flex items-center gap-2 mb-3">
-              <CalendarDays className="w-8 h-8 text-[#43ac35]" />
+              <CalendarDays className="w-8 h-8 text-[#399e2c]" />
               <h2 className="text-3xl md:text-4xl font-black text-[#0A1A11]">{t.calendar.title}</h2>
             </div>
             <p className="text-sm md:text-base text-gray-600 font-bold">{t.calendar.subtitle}</p>
           </motion.div>
           
-          <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="bg-white rounded-[1.5rem] p-5 md:p-8 border border-[#43ac35]/20 shadow-xl shadow-[#43ac35]/5">
+          <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="bg-white rounded-[1.5rem] p-5 md:p-8 border border-[#399e2c]/20 shadow-xl shadow-[#399e2c]/5">
             <div className="flex flex-wrap justify-center gap-2 mb-6">
               {t.calendar.categories.map((cat, idx) => (
-                <button key={idx} onClick={() => setActiveTab(idx)} className={`px-6 py-2.5 rounded-full font-bold text-xs md:text-sm transition-colors ${ activeTab === idx ? 'bg-gradient-to-r from-[#43ac35] to-[#2ecc71] text-white shadow-[0_0_15px_rgba(67,172,53,0.4)]' : 'bg-[#f4fcf6] text-gray-700 border border-gray-200 hover:bg-[#e8f8ee]' }`}>
+                <button key={idx} onClick={() => setActiveTab(idx)} className={`px-6 py-2.5 rounded-full font-bold text-xs md:text-sm transition-colors ${ activeTab === idx ? 'bg-gradient-to-r from-[#399e2c] to-[#268a1a] text-white shadow-[0_0_15px_rgba(57,158,44,0.4)]' : 'bg-[#f4fcf6] text-gray-700 border border-gray-200 hover:bg-[#e8f8ee]' }`}>
                   {cat}
                 </button>
               ))}
@@ -379,15 +379,15 @@ export default function KhairEgyptHome() {
                   <AnimatePresence mode="wait">
                     <motion.div key={activeTab} initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }} transition={{ duration: 0.2 }} className="space-y-2">
                       {t.calendar.items[activeTab].map((item, idx) => (
-                        <div key={idx} className="grid grid-cols-[1.5fr_repeat(12,1fr)_1fr] items-center p-2.5 bg-white rounded-xl border border-gray-100 hover:border-[#43ac35]/50 transition-colors shadow-sm">
+                        <div key={idx} className="grid grid-cols-[1.5fr_repeat(12,1fr)_1fr] items-center p-2.5 bg-white rounded-xl border border-gray-100 hover:border-[#399e2c]/50 transition-colors shadow-sm">
                           <div className="font-bold text-[#0A1A11] text-xs md:text-sm pl-2">{item.name}</div>
                           {item.active.map((isActive, monthIdx) => (
                             <div key={monthIdx} className="flex justify-center">
-                              <div className={`w-2 h-2 md:w-2.5 md:h-2.5 rounded-full transition-colors ${isActive ? 'bg-[#43ac35] shadow-[0_0_8px_rgba(67,172,53,0.8)]' : 'bg-gray-200'}`}></div>
+                              <div className={`w-2 h-2 md:w-2.5 md:h-2.5 rounded-full transition-colors ${isActive ? 'bg-[#399e2c] shadow-[0_0_8px_rgba(57,158,44,0.8)]' : 'bg-gray-200'}`}></div>
                             </div>
                           ))}
                           <div className="flex justify-center">
-                            <div className="font-bold text-[#0A1A11] bg-[#f4fcf6] border border-[#43ac35]/20 rounded-md px-2 py-0.5 text-xs">
+                            <div className="font-bold text-[#0A1A11] bg-[#f4fcf6] border border-[#399e2c]/20 rounded-md px-2 py-0.5 text-xs">
                               {item.temp}
                             </div>
                           </div>
@@ -407,12 +407,12 @@ export default function KhairEgyptHome() {
         <div className="max-w-6xl mx-auto px-4 md:px-6 mb-14">
           <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-black text-[#0A1A11] mb-3">{t.shipping.title}</h2>
-            <div className="w-10 h-1.5 bg-gradient-to-r from-[#43ac35] to-[#2ecc71] mx-auto rounded-full shadow-[0_0_10px_rgba(67,172,53,0.5)]"></div>
+            <div className="w-10 h-1.5 bg-gradient-to-r from-[#399e2c] to-[#268a1a] mx-auto rounded-full shadow-[0_0_10px_rgba(57,158,44,0.5)]"></div>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {t.shipping.items.map((method, idx) => (
-              <motion.div key={idx} variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="bg-white rounded-[1.5rem] p-6 shadow-md border border-gray-100 hover:border-[#43ac35] transition-colors text-center md:text-start flex flex-col items-center md:items-start group">
-                <div className="w-12 h-12 bg-[#e8f8ee] text-[#43ac35] rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#43ac35] group-hover:text-white group-hover:shadow-[0_0_15px_rgba(67,172,53,0.4)] transition-all">
+              <motion.div key={idx} variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="bg-white rounded-[1.5rem] p-6 shadow-md border border-gray-100 hover:border-[#399e2c] transition-colors text-center md:text-start flex flex-col items-center md:items-start group">
+                <div className="w-12 h-12 bg-[#e8f8ee] text-[#399e2c] rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#399e2c] group-hover:text-white group-hover:shadow-[0_0_15px_rgba(57,158,44,0.4)] transition-all">
                   {method.icon}
                 </div>
                 <h3 className="text-lg font-bold text-[#0A1A11] mb-2">{method.title}</h3>
@@ -423,47 +423,47 @@ export default function KhairEgyptHome() {
         </div>
 
         <div id="contact" className="max-w-6xl mx-auto px-4 md:px-6">
-          <div className="bg-[#0A1A11] text-white rounded-[2rem] p-8 md:p-10 shadow-2xl grid grid-cols-1 lg:grid-cols-2 gap-10 items-center border border-[#43ac35]/20">
+          <div className="bg-[#0A1A11] text-white rounded-[2rem] p-8 md:p-10 shadow-2xl grid grid-cols-1 lg:grid-cols-2 gap-10 items-center border border-[#399e2c]/20">
             <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center md:text-start">
               <h2 className="text-3xl md:text-4xl font-black mb-3">{t.contact.title}</h2>
-              <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#43ac35] to-[#2ecc71] text-lg font-black mb-8">{t.contact.subtitle}</p>
+              <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#399e2c] to-[#268a1a] text-lg font-black mb-8">{t.contact.subtitle}</p>
               <div className="space-y-4">
-                <div className="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-[#43ac35]/30 text-start hover:bg-white/10 transition-colors">
-                  <div className="bg-[#43ac35] p-2.5 rounded-lg shrink-0 shadow-[0_0_10px_rgba(67,172,53,0.4)]"><Building className="w-5 h-5 text-white" /></div>
+                <div className="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-[#399e2c]/30 text-start hover:bg-white/10 transition-colors">
+                  <div className="bg-[#399e2c] p-2.5 rounded-lg shrink-0 shadow-[0_0_10px_rgba(57,158,44,0.4)]"><Building className="w-5 h-5 text-white" /></div>
                   <p dir="ltr" className="text-sm md:text-base font-medium">Alexandria, Egypt</p>
                 </div>
-                <div className="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-[#43ac35]/30 text-start hover:bg-white/10 transition-colors">
-                  <div className="bg-[#43ac35] p-2.5 rounded-lg shrink-0 shadow-[0_0_10px_rgba(67,172,53,0.4)]"><Phone className="w-5 h-5 text-white" /></div>
+                <div className="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-[#399e2c]/30 text-start hover:bg-white/10 transition-colors">
+                  <div className="bg-[#399e2c] p-2.5 rounded-lg shrink-0 shadow-[0_0_10px_rgba(57,158,44,0.4)]"><Phone className="w-5 h-5 text-white" /></div>
                   <p dir="ltr" className="text-sm md:text-base font-medium tracking-wider">+20 106 553 3291</p>
                 </div>
-                <div className="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-[#43ac35]/30 text-start hover:bg-white/10 transition-colors">
-                  <div className="bg-[#43ac35] p-2.5 rounded-lg shrink-0 shadow-[0_0_10px_rgba(67,172,53,0.4)]"><Mail className="w-5 h-5 text-white" /></div>
+                <div className="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-[#399e2c]/30 text-start hover:bg-white/10 transition-colors">
+                  <div className="bg-[#399e2c] p-2.5 rounded-lg shrink-0 shadow-[0_0_10px_rgba(57,158,44,0.4)]"><Mail className="w-5 h-5 text-white" /></div>
                   <p className="text-sm md:text-base font-medium break-all">info@khairegypt.com</p>
                 </div>
               </div>
             </motion.div>
             
-            <motion.form variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="bg-white text-[#0A1A11] p-6 md:p-8 rounded-[1.5rem] shadow-xl border border-[#43ac35]/20">
+            <motion.form variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="bg-white text-[#0A1A11] p-6 md:p-8 rounded-[1.5rem] shadow-xl border border-[#399e2c]/20">
               <div className="space-y-4">
                 <div>
                   <label className="block text-xs font-bold mb-1.5 text-gray-800">{t.contact.form.name}</label>
-                  <input type="text" className="w-full bg-[#f4fcf6] border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#43ac35] focus:ring-2 focus:ring-[#43ac35]/30 transition-colors font-medium" />
+                  <input type="text" className="w-full bg-[#f4fcf6] border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#399e2c] focus:ring-2 focus:ring-[#399e2c]/30 transition-colors font-medium" />
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-bold mb-1.5 text-gray-800">{t.contact.form.email}</label>
-                    <input type="email" className="w-full bg-[#f4fcf6] border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#43ac35] focus:ring-2 focus:ring-[#43ac35]/30 transition-colors font-medium" />
+                    <input type="email" className="w-full bg-[#f4fcf6] border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#399e2c] focus:ring-2 focus:ring-[#399e2c]/30 transition-colors font-medium" />
                   </div>
                   <div>
                     <label className="block text-xs font-bold mb-1.5 text-gray-800">{t.contact.form.phone}</label>
-                    <input type="text" className="w-full bg-[#f4fcf6] border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#43ac35] focus:ring-2 focus:ring-[#43ac35]/30 transition-colors font-medium" />
+                    <input type="text" className="w-full bg-[#f4fcf6] border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#399e2c] focus:ring-2 focus:ring-[#399e2c]/30 transition-colors font-medium" />
                   </div>
                 </div>
                 <div>
                   <label className="block text-xs font-bold mb-1.5 text-gray-800">{t.contact.form.needs}</label>
-                  <textarea rows={3} className="w-full bg-[#f4fcf6] border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#43ac35] focus:ring-2 focus:ring-[#43ac35]/30 transition-colors resize-none font-medium"></textarea>
+                  <textarea rows={3} className="w-full bg-[#f4fcf6] border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#399e2c] focus:ring-2 focus:ring-[#399e2c]/30 transition-colors resize-none font-medium"></textarea>
                 </div>
-                <button type="button" className="w-full bg-gradient-to-r from-[#43ac35] to-[#2ecc71] text-white rounded-lg py-3 font-black text-sm hover:shadow-[0_5px_15px_rgba(67,172,53,0.5)] transition-all flex items-center justify-center gap-2 mt-2">
+                <button type="button" className="w-full bg-gradient-to-r from-[#399e2c] to-[#268a1a] text-white rounded-lg py-3 font-black text-sm hover:shadow-[0_5px_15px_rgba(57,158,44,0.5)] transition-all flex items-center justify-center gap-2 mt-2">
                   {t.contact.form.submit} <Send className="w-4 h-4" />
                 </button>
               </div>
