@@ -486,4 +486,4 @@ export default function KhairEgyptHome() {
 
     </div>
   );
-}
+} 
