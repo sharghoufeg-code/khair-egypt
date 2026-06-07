@@ -259,11 +259,17 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 2. About Us Section - Flows seamlessly from hero, colors are deeper & vibrant */}
+      {/* 2. About Us Section - Now with a high-quality agriculture image */}
       <section id="about" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-[#f6fef8] via-white to-[#eafdf0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-14 items-center">
           
-          <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="relative w-full h-[260px] md:h-[340px] bg-gradient-to-b from-[#b5f5c8] to-white rounded-[2rem] overflow-hidden flex flex-col items-center justify-end pb-6 border border-[#00cc55]/20 shadow-xl shadow-[#00cc55]/10">
+          <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="relative w-full h-[260px] md:h-[340px] rounded-[2rem] overflow-hidden flex flex-col items-center justify-end pb-6 border border-[#00cc55]/20 shadow-xl shadow-[#00cc55]/10 group">
+            {/* High Quality Agriculture Background Image */}
+            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center transition-transform duration-700 group-hover:scale-105"></div>
+            
+            {/* Subtle Gradient Overlay so text and badges pop */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+
             <div className={`absolute top-4 md:top-6 ${isAr ? 'left-4 md:left-6' : 'right-4 md:right-6'} bg-white px-3 md:px-4 py-2 rounded-2xl shadow-lg flex items-center gap-2 z-30`}>
               <div className="p-1 rounded-full border border-green-200 bg-green-50"><Leaf className="w-3 h-3 text-[#00cc55]" /></div>
               <div className="flex flex-col">
@@ -271,10 +277,7 @@ export default function KhairEgyptHome() {
                 <span className="text-xs md:text-sm font-black text-[#0A1A11] leading-none">{t.about.badgeBottom}</span>
               </div>
             </div>
-            <div className="absolute top-[10%] md:top-[15%] w-32 h-32 md:w-40 md:h-40 bg-gradient-to-tr from-[#fbbf24] to-[#fde047] rounded-full shadow-[0_0_50px_rgba(251,191,36,0.8)] z-0"></div>
-            <div className="absolute bottom-0 w-[140%] h-[40%] bg-gradient-to-t from-[#4ade80] to-[#bbf7d0] rounded-t-[100%] z-10 opacity-95"></div>
-            <div className="absolute bottom-0 w-[120%] h-[25%] bg-gradient-to-t from-[#00cc55] to-[#8affb6] rounded-t-[100%] right-[-10%] z-10 opacity-100"></div>
-            <div className="absolute bottom-0 w-12 h-[30%] bg-[#3b82f6] skew-x-12 z-20 opacity-90"></div>
+
             <div className="relative z-30 bg-white/95 backdrop-blur-sm transform-gpu px-6 py-3 rounded-full shadow-[0_5px_20px_rgba(0,204,85,0.2)] border border-white/50 mb-2">
               <p className="text-base md:text-lg font-black text-[#0A1A11]">{t.about.subtitle}</p>
             </div>
@@ -299,7 +302,7 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 3. Products Section - Vibrant gradient continues */}
+      {/* 3. Products Section */}
       <section id="products" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-[#eafdf0] via-[#dbfce5] to-[#f6fef8]">
         <div className="max-w-6xl mx-auto">
           <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-10">
