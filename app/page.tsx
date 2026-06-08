@@ -61,36 +61,11 @@ const content = {
     ],
     products: {
       title: "Premium Export Categories",
-      viewMore: "View Details",
       items: [
-        { 
-          name: "Premium Citrus", 
-          desc: "Oranges, Lemons & Mandarins", 
-          image: "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&q=80&w=800",
-          link: "#citrus",
-          icon: <Sun className="w-6 h-6 text-white" />, iconBg: "bg-gradient-to-br from-[#f59e0b] to-[#ea580c]", hoverBorder: "hover:border-[#ea580c]", shadow: "hover:shadow-[#ea580c]/20" 
-        },
-        { 
-          name: "Fresh Fruits", 
-          desc: "Mangoes, Strawberries & Grapes", 
-          image: "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&q=80&w=800",
-          link: "#fruits",
-          icon: <Cherry className="w-6 h-6 text-white" />, iconBg: "bg-gradient-to-br from-[#f43f5e] to-[#be123c]", hoverBorder: "hover:border-[#be123c]", shadow: "hover:shadow-[#be123c]/20" 
-        },
-        { 
-          name: "Root Vegetables", 
-          desc: "Premium Potatoes & Onions", 
-          image: "https://images.unsplash.com/photo-1518977672856-324dfbd7fc33?auto=format&fit=crop&q=80&w=800",
-          link: "#roots",
-          icon: <Carrot className="w-6 h-6 text-white" />, iconBg: "bg-gradient-to-br from-[#f97316] to-[#c2410c]", hoverBorder: "hover:border-[#c2410c]", shadow: "hover:shadow-[#c2410c]/40" 
-        },
-        { 
-          name: "Green Produce", 
-          desc: "Cucumbers, Peppers & Beans", 
-          image: "https://images.unsplash.com/photo-1595856728574-8b6348123223?auto=format&fit=crop&q=80&w=800",
-          link: "#greens",
-          icon: <Sprout className="w-6 h-6 text-white" />, iconBg: "bg-gradient-to-br from-[#22c55e] to-[#15803d]", hoverBorder: "hover:border-[#15803d]", shadow: "hover:shadow-[#15803d]/30" 
-        }
+        { name: "Premium Citrus", desc: "Oranges, Lemons & Mandarins", icon: <Sun className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f59e0b] to-[#ea580c]", hoverBorder: "hover:border-[#ea580c]", shadow: "hover:shadow-[#ea580c]/20" },
+        { name: "Fresh Fruits", desc: "Mangoes, Strawberries & Grapes", icon: <Cherry className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f43f5e] to-[#be123c]", hoverBorder: "hover:border-[#be123c]", shadow: "hover:shadow-[#be123c]/20" },
+        { name: "Root Vegetables", desc: "Premium Potatoes & Onions", icon: <Carrot className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f97316] to-[#c2410c]", hoverBorder: "hover:border-[#c2410c]", shadow: "hover:shadow-[#c2410c]/40" },
+        { name: "Green Produce", desc: "Cucumbers, Peppers & Beans", icon: <Sprout className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#22c55e] to-[#15803d]", hoverBorder: "hover:border-[#15803d]", shadow: "hover:shadow-[#15803d]/30" }
       ]
     },
     quality: {
@@ -175,36 +150,11 @@ const content = {
     ],
     products: {
       title: "فئات التصدير الرئيسية",
-      viewMore: "عرض التفاصيل",
       items: [
-        { 
-          name: "الموالح الفاخرة", 
-          desc: "برتقال، ليمون، ويوسفي", 
-          image: "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&q=80&w=800",
-          link: "#citrus",
-          icon: <Sun className="w-6 h-6 text-white" />, iconBg: "bg-gradient-to-br from-[#f59e0b] to-[#ea580c]", hoverBorder: "hover:border-[#ea580c]", shadow: "hover:shadow-[#ea580c]/20" 
-        },
-        { 
-          name: "الفواكه الطازجة", 
-          desc: "مانجو، فراولة، وعنب", 
-          image: "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&q=80&w=800",
-          link: "#fruits",
-          icon: <Cherry className="w-6 h-6 text-white" />, iconBg: "bg-gradient-to-br from-[#f43f5e] to-[#be123c]", hoverBorder: "hover:border-[#be123c]", shadow: "hover:shadow-[#be123c]/20" 
-        },
-        { 
-          name: "الخضروات الجذرية", 
-          desc: "بطاطس وبصل للتصدير", 
-          image: "https://images.unsplash.com/photo-1518977672856-324dfbd7fc33?auto=format&fit=crop&q=80&w=800",
-          link: "#roots",
-          icon: <Carrot className="w-6 h-6 text-white" />, iconBg: "bg-gradient-to-br from-[#f97316] to-[#c2410c]", hoverBorder: "hover:border-[#c2410c]", shadow: "hover:shadow-[#c2410c]/40" 
-        },
-        { 
-          name: "الخضروات الطازجة", 
-          desc: "خيار، فلفل، وفاصوليا", 
-          image: "https://images.unsplash.com/photo-1595856728574-8b6348123223?auto=format&fit=crop&q=80&w=800",
-          link: "#greens",
-          icon: <Sprout className="w-6 h-6 text-white" />, iconBg: "bg-gradient-to-br from-[#22c55e] to-[#15803d]", hoverBorder: "hover:border-[#15803d]", shadow: "hover:shadow-[#15803d]/30" 
-        }
+        { name: "الموالح الفاخرة", desc: "برتقال، ليمون، ويوسفي", icon: <Sun className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f59e0b] to-[#ea580c]", hoverBorder: "hover:border-[#ea580c]", shadow: "hover:shadow-[#ea580c]/20" },
+        { name: "الفواكه الطازجة", desc: "مانجو، فراولة، وعنب", icon: <Cherry className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f43f5e] to-[#be123c]", hoverBorder: "hover:border-[#be123c]", shadow: "hover:shadow-[#be123c]/20" },
+        { name: "الخضروات الجذرية", desc: "بطاطس وبصل للتصدير", icon: <Carrot className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f97316] to-[#c2410c]", hoverBorder: "hover:border-[#c2410c]", shadow: "hover:shadow-[#c2410c]/40" },
+        { name: "الخضروات الطازجة", desc: "خيار، فلفل، وفاصوليا", icon: <Sprout className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#22c55e] to-[#15803d]", hoverBorder: "hover:border-[#15803d]", shadow: "hover:shadow-[#15803d]/30" }
       ]
     },
     quality: {
@@ -382,48 +332,24 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 4. Products Section (NEW INTERACTIVE IMAGE CARDS) */}
-      <section id="products" className="relative py-10 md:py-20 px-6 bg-gradient-to-b from-[#eef7f1] via-[#e5f4eb] to-white">
+      {/* 4. Products Section */}
+      <section id="products" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-[#eef7f1] via-[#e5f4eb] to-white">
         <div className="max-w-6xl mx-auto">
-          <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-12">
+          <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-black text-[#0A1A11] mb-3">{t.products.title}</h2>
             <div className="w-12 h-1.5 bg-[#43ac35] mx-auto rounded-full"></div>
           </motion.div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {t.products.items.map((item, idx) => (
-              <motion.a 
-                key={idx} 
-                href={item.link}
-                variants={smoothFade} 
-                initial="hidden" 
-                whileInView="visible" 
-                viewport={{ once: true }} 
-                className={`bg-white rounded-[1.5rem] border border-gray-100 ${item.hoverBorder} hover:-translate-y-2 transition-all duration-300 relative overflow-hidden group shadow-md hover:shadow-2xl flex flex-col cursor-pointer`}
-              >
-                {/* Image Container with Zoom effect */}
-                <div className="relative h-48 w-full overflow-hidden bg-gray-100">
-                  <img src={item.image} alt={item.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
-                  
-                  {/* Floating Icon */}
-                  <div className={`absolute top-4 ${isAr ? 'left-4' : 'right-4'} w-10 h-10 ${item.iconBg} rounded-xl flex items-center justify-center shadow-lg`}>
-                    {item.icon}
-                  </div>
+              <motion.div key={idx} variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className={`bg-white rounded-[1.5rem] p-6 border border-gray-100 ${item.hoverBorder} hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group shadow-md`}>
+                <div className={`w-12 h-12 ${item.iconBg} rounded-[1rem] flex items-center justify-center mb-5 shadow-sm group-hover:scale-110 transition-transform duration-300`}>
+                  {item.icon}
                 </div>
-
-                {/* Content */}
-                <div className="p-6 flex flex-col flex-grow bg-white">
-                  <h3 className="text-xl font-black text-[#0A1A11] mb-2 group-hover:text-[#43ac35] transition-colors">{item.name}</h3>
-                  <p className="text-gray-500 text-sm font-medium mb-6 flex-grow">{item.desc}</p>
-                  
-                  {/* Click Action Indicator */}
-                  <div className="flex items-center gap-2 text-[#43ac35] font-bold text-sm mt-auto group-hover:gap-3 transition-all">
-                    {t.products.viewMore} 
-                    {isAr ? <ArrowLeft className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
-                  </div>
-                </div>
-              </motion.a>
+                <h3 className="text-lg font-black text-[#0A1A11] mb-1.5">{item.name}</h3>
+                <p className="text-gray-500 text-xs md:text-sm font-medium">{item.desc}</p>
+                <div className={`absolute bottom-0 ${isAr ? 'left-0' : 'right-0'} w-20 h-20 bg-gradient-to-tl from-gray-50 to-transparent rounded-tl-full opacity-50`} bounds="parent"></div>
+              </motion.div>
             ))}
           </div>
         </div>
