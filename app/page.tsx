@@ -28,19 +28,16 @@ const content = {
     },
     about: {
       title: "About Us",
-      subtitle: "Egyptian Roots, Global Vision",
-      desc: "Khair Egypt was founded to build a bridge between Egypt's fertile lands and global markets. We specialize in exporting premium fresh fruits and vegetables, carefully grown and harvested at the perfect time to ensure they reach you fresh.",
-      points: ["Global GAP Certified Farms", "Advanced Cold Chain Logistics", "Strict Shipping Commitments"],
-      badgeTop: "Trusted Export",
-      badgeBottom: "From Egypt"
+      desc: "Khair Egypt was founded to build a bridge between Egypt's fertile lands and global markets. We specialize in exporting premium fresh fruits and vegetables, carefully grown and harvested at the perfect time to ensure they reach you fresh. Our mission is to deliver the essence of Egyptian nature to the world with uncompromising quality, reliability, and sustainable practices that honor our heritage.",
+      points: ["Global GAP Certified Farms", "Advanced Cold Chain Logistics", "Strict Shipping Commitments", "Premium Quality Assurance"]
     },
     products: {
       title: "Premium Export Categories",
       items: [
-        { name: "Premium Citrus", desc: "Oranges, Lemons & Mandarins", icon: <Sun className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f59e0b] to-[#d97706]", hoverBorder: "hover:border-[#f59e0b]", shadow: "hover:shadow-[#f59e0b]/20" },
-        { name: "Fresh Fruits", desc: "Mangoes, Strawberries & Grapes", icon: <Cherry className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f43f5e] to-[#e11d48]", hoverBorder: "hover:border-[#f43f5e]", shadow: "hover:shadow-[#f43f5e]/20" },
-        { name: "Root Vegetables", desc: "Premium Potatoes & Onions", icon: <Carrot className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f97316] to-[#ea580c]", hoverBorder: "hover:border-[#f97316]", shadow: "hover:shadow-[#f97316]/20" },
-        { name: "Green Produce", desc: "Cucumbers, Peppers & Beans", icon: <Sprout className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#22c55e] to-[#16a34a]", hoverBorder: "hover:border-[#22c55e]", shadow: "hover:shadow-[#22c55e]/20" }
+        { name: "Premium Citrus", desc: "Oranges, Lemons & Mandarins", icon: <Sun className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f59e0b] to-[#ea580c]", hoverBorder: "hover:border-[#ea580c]", shadow: "hover:shadow-[#ea580c]/20" },
+        { name: "Fresh Fruits", desc: "Mangoes, Strawberries & Grapes", icon: <Cherry className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f43f5e] to-[#be123c]", hoverBorder: "hover:border-[#be123c]", shadow: "hover:shadow-[#be123c]/20" },
+        { name: "Root Vegetables", desc: "Premium Potatoes & Onions", icon: <Carrot className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f97316] to-[#c2410c]", hoverBorder: "hover:border-[#c2410c]", shadow: "hover:shadow-[#c2410c]/40" },
+        { name: "Green Produce", desc: "Cucumbers, Peppers & Beans", icon: <Sprout className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#22c55e] to-[#15803d]", hoverBorder: "hover:border-[#15803d]", shadow: "hover:shadow-[#15803d]/30" }
       ]
     },
     quality: {
@@ -111,19 +108,16 @@ const content = {
     },
     about: {
       title: "من نحن",
-      subtitle: "جذور مصرية، رؤية عالمية",
-      desc: "تأسست 'خير مصر' لتبني جسراً بين خيرات الأراضي المصرية والأسواق العالمية. نحن نتخصص في تصدير الخضروات والفواكه الطازجة بجودة نثق بها، نزرعها بعناية، ونقطفها في الوقت المثالي.",
-      points: ["مزارع معتمدة دولياً (Global GAP)", "سلسلة تبريد لوجستية متطورة", "التزام تام بمواعيد الشحن"],
-      badgeTop: "تصدير موثوق",
-      badgeBottom: "من قلب مصر"
+      desc: "تأسست 'خير مصر' لتبني جسراً بين خيرات الأراضي المصرية والأسواق العالمية. نحن نتخصص في تصدير الخضروات والفواكه الطازجة بجودة نثق بها، نزرعها بعناية، ونقطفها في الوقت المثالي لضمان وصولها طازجة إليك. نحن نؤمن بقوة الطبيعة وبجودة ما نزرعه بأيادٍ مصرية أمينة ورؤية عالمية تلبي تطلعات شركائنا في كل مكان.",
+      points: ["مزارع معتمدة دولياً (Global GAP)", "سلسلة تبريد لوجستية متطورة", "التزام تام بمواعيد الشحن", "ضمان جودة استثنائي وصارم"]
     },
     products: {
       title: "فئات التصدير الرئيسية",
       items: [
-        { name: "الموالح الفاخرة", desc: "برتقال، ليمون، ويوسفي", icon: <Sun className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f59e0b] to-[#d97706]", hoverBorder: "hover:border-[#f59e0b]", shadow: "hover:shadow-[#f59e0b]/20" },
-        { name: "الفواكه الطازجة", desc: "مانجو، فراولة، وعنب", icon: <Cherry className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f43f5e] to-[#e11d48]", hoverBorder: "hover:border-[#f43f5e]", shadow: "hover:shadow-[#f43f5e]/20" },
-        { name: "الخضروات الجذرية", desc: "بطاطس وبصل للتصدير", icon: <Carrot className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f97316] to-[#ea580c]", hoverBorder: "hover:border-[#f97316]", shadow: "hover:shadow-[#f97316]/20" },
-        { name: "الخضروات الطازجة", desc: "خيار، فلفل، وفاصوليا", icon: <Sprout className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#22c55e] to-[#16a34a]", hoverBorder: "hover:border-[#22c55e]", shadow: "hover:shadow-[#22c55e]/20" }
+        { name: "الموالح الفاخرة", desc: "برتقال، ليمون، ويوسفي", icon: <Sun className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f59e0b] to-[#ea580c]", hoverBorder: "hover:border-[#ea580c]", shadow: "hover:shadow-[#ea580c]/20" },
+        { name: "الفواكه الطازجة", desc: "مانجو، فراولة، وعنب", icon: <Cherry className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f43f5e] to-[#be123c]", hoverBorder: "hover:border-[#be123c]", shadow: "hover:shadow-[#be123c]/20" },
+        { name: "الخضروات الجذرية", desc: "بطاطس وبصل للتصدير", icon: <Carrot className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#f97316] to-[#c2410c]", hoverBorder: "hover:border-[#c2410c]", shadow: "hover:shadow-[#c2410c]/40" },
+        { name: "الخضروات الطازجة", desc: "خيار، فلفل، وفاصوليا", icon: <Sprout className="w-7 h-7 text-white" />, iconBg: "bg-gradient-to-br from-[#22c55e] to-[#15803d]", hoverBorder: "hover:border-[#15803d]", shadow: "hover:shadow-[#15803d]/30" }
       ]
     },
     quality: {
@@ -184,11 +178,6 @@ export default function KhairEgyptHome() {
   const t = content[lang];
   const isAr = lang === 'ar';
 
-  useEffect(() => {
-    // Disabled smooth scroll on initial load for faster rendering
-  }, []);
-
-  // Optimized Animation Variant
   const smoothFade = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } }
@@ -226,7 +215,7 @@ export default function KhairEgyptHome() {
         </button>
       </motion.nav>
 
-      {/* 1. Hero Section - Globe is a perfect circle (rounded-full) */}
+      {/* 1. Hero Section */}
       <section id="home" className="relative pt-28 pb-10 md:pt-36 md:pb-12 px-6 bg-gradient-to-b from-[#eef9f2] via-[#f4fcf6] to-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="text-center lg:text-start">
@@ -260,48 +249,26 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 2. About Us Section - Smooth gradient starting from white down to soft mint */}
-      <section id="about" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-white via-[#f6fcf8] to-[#eef7f1]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-14 items-center">
-          
-          <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="relative w-full h-[260px] md:h-[340px] bg-gradient-to-b from-[#e5fbf0] to-white rounded-[2rem] overflow-hidden flex flex-col items-center justify-end pb-6 border border-green-50 shadow-sm">
-            <div className={`absolute top-4 md:top-6 ${isAr ? 'left-4 md:left-6' : 'right-4 md:right-6'} bg-white px-3 md:px-4 py-2 rounded-2xl shadow-sm flex items-center gap-2 z-30`}>
-              <div className="p-1 rounded-full border border-green-100"><Leaf className="w-3 h-3 text-[#43ac35]" /></div>
-              <div className="flex flex-col">
-                <span className="text-[8px] md:text-[9px] font-bold text-gray-500 uppercase tracking-widest">{t.about.badgeTop}</span>
-                <span className="text-xs md:text-sm font-black text-[#0A1A11] leading-none">{t.about.badgeBottom}</span>
-              </div>
-            </div>
-            <div className="absolute top-[10%] md:top-[15%] w-32 h-32 md:w-40 md:h-40 bg-[#fbbf24] rounded-full z-0"></div>
-            <div className="absolute bottom-0 w-[140%] h-[40%] bg-gradient-to-t from-[#86efac] to-[#dcfce3] rounded-t-[100%] z-10 opacity-90"></div>
-            <div className="absolute bottom-0 w-[120%] h-[25%] bg-gradient-to-t from-[#4ade80] to-[#bbf7d0] rounded-t-[100%] right-[-10%] z-10 opacity-95"></div>
-            <div className="absolute bottom-0 w-12 h-[30%] bg-[#93c5fd] skew-x-12 z-20 opacity-80"></div>
-            <div className="relative z-30 bg-white/95 backdrop-blur-sm transform-gpu px-6 py-3 rounded-full shadow-lg border border-white/50 mb-2">
-              <p className="text-base md:text-lg font-black text-[#0A1A11]">{t.about.subtitle}</p>
-            </div>
-          </motion.div>
-
-          <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="lg:pl-6">
-            <h2 className="text-3xl md:text-4xl font-black text-[#0A1A11] mb-3">{t.about.title}</h2>
-            <div className="w-10 h-1.5 bg-[#43ac35] mb-5 rounded-full"></div>
-            <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-8 font-medium">{t.about.desc}</p>
-            
-            <div className="space-y-3">
-              {t.about.points.map((point: any, idx: number) => (
-                <div key={idx} className="bg-white px-5 py-4 rounded-[1rem] shadow-sm border border-gray-100 flex items-center gap-3 hover:border-green-200 transition-colors">
-                  <div className="rounded-full border border-green-100 p-0.5 shrink-0">
-                    <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-[#43ac35]" />
-                  </div>
-                  <span className="text-sm md:text-base font-bold text-[#0A1A11]">{point}</span>
-                </div>
-              ))}
-            </div>
-          </motion.div>
+      {/* 2. About Us Section - Text-only Clean Layout */}
+      <section id="about" className="py-20 px-6 bg-gradient-to-br from-[#f0fcf0] via-white to-[#f0fcf0] border-y border-gray-100">
+        <div className="max-w-4xl mx-auto text-center">
+           <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+             <h2 className="text-4xl md:text-5xl font-black mb-6 text-[#0A1A11]">{t.about.title}</h2>
+             <div className="w-12 h-1.5 bg-[#43ac35] mx-auto mb-8 rounded-full"></div>
+             <p className="text-gray-700 text-base md:text-xl leading-relaxed mb-12 font-medium">{t.about.desc}</p>
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-start">
+               {t.about.points.map((p, i) => (
+                 <div key={i} className="flex items-center gap-3 bg-white p-5 rounded-xl shadow-sm border border-gray-100 font-bold text-[#0A1A11] hover:border-green-200 transition-colors">
+                    <CheckCircle2 className="text-[#43ac35] w-6 h-6 shrink-0" /> {p}
+                 </div>
+               ))}
+             </div>
+           </motion.div>
         </div>
       </section>
 
-      {/* 3. Products Section - Gradient continues, making white cards pop beautifully */}
-      <section id="products" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-[#eef7f1] via-[#e5f4eb] to-[#f9fdfa]">
+      {/* 3. Products Section */}
+      <section id="products" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-[#eef7f1] via-[#e5f4eb] to-white">
         <div className="max-w-6xl mx-auto">
           <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-black text-[#0A1A11] mb-3">{t.products.title}</h2>
@@ -316,7 +283,7 @@ export default function KhairEgyptHome() {
                 </div>
                 <h3 className="text-lg font-black text-[#0A1A11] mb-1.5">{item.name}</h3>
                 <p className="text-gray-500 text-xs md:text-sm font-medium">{item.desc}</p>
-                <div className={`absolute bottom-0 ${isAr ? 'left-0' : 'right-0'} w-20 h-20 bg-gradient-to-tl from-gray-50 to-transparent rounded-tl-full opacity-50`}></div>
+                <div className={`absolute bottom-0 ${isAr ? 'left-0' : 'right-0'} w-20 h-20 bg-gradient-to-tl from-gray-50 to-transparent rounded-tl-full opacity-50`} bounds="parent"></div>
               </motion.div>
             ))}
           </div>
@@ -324,7 +291,7 @@ export default function KhairEgyptHome() {
       </section>
 
       {/* 4. Quality Section */}
-      <section id="quality" className="relative py-12 md:py-20 bg-gradient-to-b from-[#f9fdfa] to-[#f0f7f3]">
+      <section id="quality" className="relative py-12 md:py-20 bg-gradient-to-b from-white to-[#f0f7f3]">
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 items-center">
             <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="lg:col-span-1 text-center lg:text-start">
