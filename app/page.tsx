@@ -1,13 +1,35 @@
 // @ts-nocheck
 "use client";
 
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence, useInView, animate } from 'framer-motion';
 import { Leaf, Globe2, MapPin, ArrowRight, ArrowLeft, Send, Phone, Mail, Building, CheckCircle2, Sun, Cherry, Carrot, Sprout, Ship, Plane, Truck, CalendarDays, Award, Package, ShieldCheck } from 'lucide-react';
 import { Cairo, Inter } from 'next/font/google';
 
 const cairo = Cairo({ subsets: ['arabic'], weight: ['400', '600', '700', '900'] });
 const inter = Inter({ subsets: ['latin'], weight: ['400', '600', '700', '900'] });
+
+// مكون فرعي لعمل حركة العداد للأرقام
+function StatCounter({ from = 0, to, duration = 2 }) {
+  const nodeRef = useRef(null);
+  const inView = useInView(nodeRef, { once: true, margin: "-50px" });
+
+  useEffect(() => {
+    if (inView) {
+      const node = nodeRef.current;
+      const controls = animate(from, to, {
+        duration,
+        ease: "easeOut",
+        onUpdate(value) {
+          node.textContent = Math.round(value);
+        }
+      });
+      return () => controls.stop();
+    }
+  }, [from, to, duration, inView]);
+
+  return <span ref={nodeRef}>{from}</span>;
+}
 
 const content = {
   en: {
@@ -31,6 +53,12 @@ const content = {
       desc: "Khair Egypt was founded to build a bridge between Egypt's fertile lands and global markets. We specialize in exporting premium fresh fruits and vegetables, carefully grown and harvested at the perfect time to ensure they reach you fresh. Our mission is to deliver the essence of Egyptian nature to the world with uncompromising quality, reliability, and sustainable practices that honor our heritage.",
       points: ["Global GAP Certified Farms", "Advanced Cold Chain Logistics", "Strict Shipping Commitments", "Premium Quality Assurance"]
     },
+    stats: [
+      { num: 50, label: "Countries Worldwide", suffix: "+" },
+      { num: 200, label: "B2B Clients", suffix: "+" },
+      { num: 30, label: "Exported Products", suffix: "+" },
+      { num: 20, label: "Years of Experience", suffix: "+" }
+    ],
     products: {
       title: "Premium Export Categories",
       items: [
@@ -111,6 +139,12 @@ const content = {
       desc: "تأسست 'خير مصر' لتبني جسراً بين خيرات الأراضي المصرية والأسواق العالمية. نحن نتخصص في تصدير الخضروات والفواكه الطازجة بجودة نثق بها، نزرعها بعناية، ونقطفها في الوقت المثالي لضمان وصولها طازجة إليك. نحن نؤمن بقوة الطبيعة وبجودة ما نزرعه بأيادٍ مصرية أمينة ورؤية عالمية تلبي تطلعات شركائنا في كل مكان.",
       points: ["مزارع معتمدة دولياً (Global GAP)", "سلسلة تبريد لوجستية متطورة", "التزام تام بمواعيد الشحن", "ضمان جودة استثنائي وصارم"]
     },
+    stats: [
+      { num: 50, label: "دولة حول العالم", suffix: "+" },
+      { num: 200, label: "عميل تجاري", suffix: "+" },
+      { num: 30, label: "منتج للتصدير", suffix: "+" },
+      { num: 20, label: "سنة من الخبرة", suffix: "+" }
+    ],
     products: {
       title: "فئات التصدير الرئيسية",
       items: [
@@ -177,6 +211,10 @@ export default function KhairEgyptHome() {
   const [activeTab, setActiveTab] = useState(0); 
   const t = content[lang];
   const isAr = lang === 'ar';
+
+  useEffect(() => {
+    // Disabled smooth scroll on initial load for faster rendering
+  }, []);
 
   const smoothFade = {
     hidden: { opacity: 0, y: 20 },
@@ -250,7 +288,7 @@ export default function KhairEgyptHome() {
       </section>
 
       {/* 2. About Us Section - Text-only Clean Layout */}
-      <section id="about" className="py-20 px-6 bg-gradient-to-br from-[#f0fcf0] via-white to-[#f0fcf0] border-y border-gray-100">
+      <section id="about" className="py-20 px-6 bg-gradient-to-br from-[#f0fcf0] via-white to-[#f0fcf0]">
         <div className="max-w-4xl mx-auto text-center">
            <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }}>
              <h2 className="text-4xl md:text-5xl font-black mb-6 text-[#0A1A11]">{t.about.title}</h2>
@@ -267,7 +305,29 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 3. Products Section */}
+      {/* NEW: 3. Stats / Counters Section with Grid Background */}
+      <section className="relative py-16 md:py-20 px-6 bg-gradient-to-b from-[#f0fcf0] to-[#eef7f1] overflow-hidden">
+        {/* Subtle Grid Pattern Overlay */}
+        <div className="absolute inset-0 opacity-40 bg-[linear-gradient(rgba(0,0,0,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.04)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 text-center">
+            {t.stats.map((stat, idx) => (
+              <motion.div key={idx} variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} transition={{ delay: idx * 0.1 }} className="flex flex-col items-center justify-center p-4">
+                <div className="flex items-center justify-center mb-2" dir="ltr">
+                  <span className="text-5xl md:text-6xl font-black text-[#0A1A11] tracking-tight">
+                    <StatCounter to={stat.num} />
+                  </span>
+                  <span className="text-4xl md:text-5xl font-black text-[#43ac35] ml-1">{stat.suffix}</span>
+                </div>
+                <p className="text-sm md:text-base text-gray-500 font-bold uppercase tracking-wide">{stat.label}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Products Section */}
       <section id="products" className="relative py-10 md:py-16 px-6 bg-gradient-to-b from-[#eef7f1] via-[#e5f4eb] to-white">
         <div className="max-w-6xl mx-auto">
           <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-10">
@@ -290,7 +350,7 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 4. Quality Section */}
+      {/* 5. Quality Section */}
       <section id="quality" className="relative py-12 md:py-20 bg-gradient-to-b from-white to-[#f0f7f3]">
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12 items-center">
@@ -317,7 +377,7 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 5. Calendar Section */}
+      {/* 6. Calendar Section */}
       <section id="calendar" className="relative py-10 md:py-16 px-4 md:px-6 bg-gradient-to-b from-[#f0f7f3] to-white">
         <div className="max-w-5xl mx-auto">
           <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="flex flex-col items-center justify-center text-center mb-8">
@@ -370,7 +430,7 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 6. Shipping & Contact */}
+      {/* 7. Shipping & Contact */}
       <section id="shipping" className="relative pt-10 md:pt-14 pb-12 md:pb-20 bg-gradient-to-b from-white to-[#edf5f0]">
         <div className="max-w-6xl mx-auto px-4 md:px-6 mb-14">
           <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-8">
