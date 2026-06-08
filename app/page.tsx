@@ -3,7 +3,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useInView, animate } from 'framer-motion';
-import { Leaf, Globe2, MapPin, ArrowRight, ArrowLeft, Send, Phone, Mail, Building, CheckCircle2, Sun, Cherry, Carrot, Sprout, Ship, Plane, Truck, CalendarDays, Award, Package, ShieldCheck, Facebook, Twitter, Youtube } from 'lucide-react';
+import { Leaf, Globe2, MapPin, ArrowRight, ArrowLeft, Send, Phone, Mail, Building, CheckCircle2, Sun, Cherry, Carrot, Sprout, Ship, Plane, Truck, CalendarDays, Award, Package, ShieldCheck } from 'lucide-react';
 import { Cairo, Inter } from 'next/font/google';
 
 const cairo = Cairo({ subsets: ['arabic'], weight: ['400', '600', '700', '900'] });
@@ -313,7 +313,6 @@ export default function KhairEgyptHome() {
 
       {/* 3. Stats / Counters Section */}
       <section className="relative py-16 md:py-20 px-6 bg-gradient-to-b from-[#f0fcf0] to-[#eef7f1] overflow-hidden">
-        {/* Subtle Grid Pattern Overlay */}
         <div className="absolute inset-0 opacity-40 bg-[linear-gradient(rgba(0,0,0,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.04)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
         <div className="max-w-6xl mx-auto relative z-10">
@@ -506,7 +505,7 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* Footer with Social Links */}
+      {/* Footer with Pure SVG Social Links (Foolproof) */}
       <footer className="bg-[#0A1A11] border-t border-white/10 pt-12 pb-8">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -524,16 +523,16 @@ export default function KhairEgyptHome() {
               {t.footer.copyright}
             </p>
 
-            {/* Social Links */}
+            {/* Social Links (Using Pure Inline SVGs so they never break) */}
             <div className="flex items-center gap-4">
               <a href="https://www.facebook.com/khairgarlics" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#43ac35] hover:text-white hover:scale-110 transition-all">
-                <Facebook className="w-4 h-4" />
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
               </a>
               <a href="https://x.com/EgyptKhair" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#43ac35] hover:text-white hover:scale-110 transition-all">
-                <Twitter className="w-4 h-4" />
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
               </a>
               <a href="https://www.youtube.com/channel/UCwVoMkaZTgqp9v3fV0orDlQ/videos" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#43ac35] hover:text-white hover:scale-110 transition-all">
-                <Youtube className="w-4 h-4" />
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               </a>
             </div>
 
