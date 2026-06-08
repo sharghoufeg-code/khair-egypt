@@ -3,7 +3,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useInView, animate } from 'framer-motion';
-import { Leaf, Globe2, MapPin, ArrowRight, ArrowLeft, Send, Phone, Mail, Building, CheckCircle2, Sun, Cherry, Carrot, Sprout, Ship, Plane, Truck, CalendarDays, Award, Package, ShieldCheck } from 'lucide-react';
+import { Leaf, Globe2, MapPin, ArrowRight, ArrowLeft, Send, Phone, Mail, Building, CheckCircle2, Sun, Cherry, Carrot, Sprout, Ship, Plane, Truck, CalendarDays, Award, Package, ShieldCheck, Facebook, Twitter, Youtube } from 'lucide-react';
 import { Cairo, Inter } from 'next/font/google';
 
 const cairo = Cairo({ subsets: ['arabic'], weight: ['400', '600', '700', '900'] });
@@ -115,6 +115,9 @@ const content = {
       subtitle: "Let us supply you with the best",
       form: { name: "Company / Importer Name", email: "Email Address", phone: "Phone Number", needs: "Required Products", submit: "Submit Request" }
     },
+    footer: {
+      copyright: "© 2026 Khair Egypt. All rights reserved."
+    },
     langToggle: "عربي",
     dir: "ltr" as const
   },
@@ -200,6 +203,9 @@ const content = {
       title: "ابدأ شراكتك معنا",
       subtitle: "دعنا نورد لك الأفضل",
       form: { name: "اسم الشركة / المستورد", email: "البريد الإلكتروني", phone: "رقم الهاتف", needs: "المنتجات المطلوبة", submit: "إرسال الطلب" }
+    },
+    footer: {
+      copyright: "© 2026 خير مصر. جميع الحقوق محفوظة."
     },
     langToggle: "English",
     dir: "rtl" as const
@@ -287,7 +293,7 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* 2. About Us Section - Text-only Clean Layout */}
+      {/* 2. About Us Section */}
       <section id="about" className="py-20 px-6 bg-gradient-to-br from-[#f0fcf0] via-white to-[#f0fcf0]">
         <div className="max-w-4xl mx-auto text-center">
            <motion.div variants={smoothFade} initial="hidden" whileInView="visible" viewport={{ once: true }}>
@@ -305,7 +311,7 @@ export default function KhairEgyptHome() {
         </div>
       </section>
 
-      {/* NEW: 3. Stats / Counters Section with Grid Background */}
+      {/* 3. Stats / Counters Section */}
       <section className="relative py-16 md:py-20 px-6 bg-gradient-to-b from-[#f0fcf0] to-[#eef7f1] overflow-hidden">
         {/* Subtle Grid Pattern Overlay */}
         <div className="absolute inset-0 opacity-40 bg-[linear-gradient(rgba(0,0,0,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.04)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -456,15 +462,15 @@ export default function KhairEgyptHome() {
               <h2 className="text-3xl md:text-4xl font-black mb-3">{t.contact.title}</h2>
               <p className="text-[#43ac35] text-lg font-bold mb-8">{t.contact.subtitle}</p>
               <div className="space-y-4">
-                <div className="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-white/10 text-start">
+                <div className="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-white/10 text-start hover:bg-white/10 transition-colors">
                   <div className="bg-[#43ac35] p-2.5 rounded-lg shrink-0"><Building className="w-5 h-5 text-white" /></div>
                   <p dir="ltr" className="text-sm md:text-base font-medium">Alexandria, Egypt</p>
                 </div>
-                <div className="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-white/10 text-start">
+                <div className="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-white/10 text-start hover:bg-white/10 transition-colors">
                   <div className="bg-[#43ac35] p-2.5 rounded-lg shrink-0"><Phone className="w-5 h-5 text-white" /></div>
                   <p dir="ltr" className="text-sm md:text-base font-medium tracking-wider">+20 106 553 3291</p>
                 </div>
-                <div className="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-white/10 text-start">
+                <div className="flex items-center gap-4 bg-white/5 p-3 rounded-xl border border-white/10 text-start hover:bg-white/10 transition-colors">
                   <div className="bg-[#43ac35] p-2.5 rounded-lg shrink-0"><Mail className="w-5 h-5 text-white" /></div>
                   <p className="text-sm md:text-base font-medium break-all">info@khairegypt.com</p>
                 </div>
@@ -499,6 +505,41 @@ export default function KhairEgyptHome() {
           </div>
         </div>
       </section>
+
+      {/* Footer with Social Links */}
+      <footer className="bg-[#0A1A11] border-t border-white/10 pt-12 pb-8">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            
+            {/* Logo */}
+            <div className="flex items-center gap-3">
+              <div className="bg-[#43ac35] p-2 rounded-full">
+                <Leaf className="w-4 h-4 text-white" />
+              </div>
+              <span className="text-xl font-black uppercase tracking-tight text-white">{t.brand}</span>
+            </div>
+
+            {/* Copyright */}
+            <p className="text-gray-400 text-sm font-medium text-center md:text-start">
+              {t.footer.copyright}
+            </p>
+
+            {/* Social Links */}
+            <div className="flex items-center gap-4">
+              <a href="https://www.facebook.com/khairgarlics" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#43ac35] hover:text-white hover:scale-110 transition-all">
+                <Facebook className="w-4 h-4" />
+              </a>
+              <a href="https://x.com/EgyptKhair" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#43ac35] hover:text-white hover:scale-110 transition-all">
+                <Twitter className="w-4 h-4" />
+              </a>
+              <a href="https://www.youtube.com/channel/UCwVoMkaZTgqp9v3fV0orDlQ/videos" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#43ac35] hover:text-white hover:scale-110 transition-all">
+                <Youtube className="w-4 h-4" />
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </footer>
 
     </div>
   );
